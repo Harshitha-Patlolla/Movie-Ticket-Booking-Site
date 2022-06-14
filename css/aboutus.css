@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+ 
+  @media screen and (max-width: 480px) {
+    .main{
+      flex-wrap: wrap;
+      display: flex;
+        
+    }
+    .profile-card{
+      margin: 100px;
+    }
+
+    .footer-basic {
+      padding: 40px 0;
+      background-color: #ffffff;
+      color: #4b4c4d;
+      margin-top: 300vh;
+  }
+}
+
+
+  .logo a{
+    font-family: 'Pacifico', cursive;
+  }
+  .title {
+    text-align: center;
+    margin: 2.5rem;
+    margin-left: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+  }
+
+  .main{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+  .profile-card{
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 100px;
+  }
+  .profile-card:hover{
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+  }
+  .profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+  }
+  .profile-card:hover .img{
+    transform: translateY(-60px);
+  }
+  .img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+  }
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+  .caption{
+    text-align: center;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: .6s;
+  }
+
+
+  .profile-card:hover .caption{
+    opacity: 1;
+  }
+  .caption h3{
+    font-size: 21px;
+    font-family: sans-serif;
+  }
+  .caption p{
+    font-size: 15px;
+    color: #09938f;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+  }
+
+  .role{
+    font-size: 15px;
+    font-weight: bold;
+    color: #0c52a1;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+  }
+
+  .caption .social-links a{
+    color: #333;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }
+
+  /* footer */
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  .button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #e7e7e7;
+    border: none;
+    padding-top: 10px;
+    padding: 10px 24px;
+    margin: 0;
+    font-family: inherit;
+    font-size:small;
+    position: relative;
+    display: inline-block;
+    display: block;
+    margin-top: 10px;
+    margin-left: 25px;
+    width:150px;
+    height: 40px;
+  }
+  
+  .button::before,
+  .button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button--pan {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    border: 2px solid #000;
+    border-radius: 20rem;
+    overflow: hidden;
+    color: #fff;
+    margin: 10px auto 0;
+  }
+  
+  .button--pan span {
+    position: relative;
+    mix-blend-mode: difference;
+  }
+  
+  .button--pan::before {
+    content: '';
+    background: #000;
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  }
+  
+  .button--pan:hover::before {
+    transform: translate3d(0,-100%,0);
+  }
+  
