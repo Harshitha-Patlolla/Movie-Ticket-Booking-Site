@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/306b2e72dc.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/icons8-clapperboard-32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <title>Show Time</title>    
+</head>
+<body>
+    <div class="topnav">
+        
+        <div class="nav1-search">
+
+
+            <div class="logoicon">
+                <a class="logo" href="index.html"><img class="show-time"
+                        src="img/tv.png" alt="showTime icon"> Show Time</a>
+            </div>
+            
+            <form class="search-form">
+                
+                <input type="text" placeholder=" Search..">
+                <button type=submit class="search-button"><img src="img/search.png" width="50%" height="60%"></button>
+            
+            </form>
+        </div>
+
+        <div class="right-container">
+        <div class="nav2"><a href="./index.html">Home</a></div>
+        <div class="nav2 dropdown">
+            Genre
+            <div class="dropdown-content">
+                <a href="#">Action</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Horror</a>
+                <a href="#">Romance</a>
+                <a href="#">Thriller</a>
+            </div>
+        </div>
+
+            <div class="nav2"><a href="./aboutus.html" >About Us</a></div>
+            <div class="nav2" ><a href="./login.html">Login</a></div>
+        </div>
+        
+    </div>
+    <div class="login-page">
+        <div class="login-form-box">
+            <div class="login-buttons">
+                <div id="lbutton"></div>
+                <button type="button" class="toggle-button" onclick="login()">Sign In</button>
+                <button type="button" class="toggle-button" onclick="register()">Sign Up</button>
+            </div>
+            <div class="social-media-icons">
+                <img src="./img/facebook.png">
+                <img src="./img/instagram.png">
+                <img src="./img/twitter.png">
+            </div>
+            <form id="login" class="input">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="login-submit-button">Sign In</button>
+            </form>
+            <form id="register" class="input">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & Conditions</span>
+                <button type="submit" class="login-submit-button">Sign Up</button>
+            </form> 
+        </div>
+        
+    </div>
+
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("lbutton");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+    </script>
+
+    <div class="footer-basic">
+        <div class="footer-search">
+            <footer>
+        
+                <div class="social"><a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+                </div>
+                <ul class="copyright">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">About US</a></li>
+                </ul>
+                <p class="copyright"> Copyright 2022 © ShowTime. All rights reserved</p>
+            </footer>
+    </div>
+
+
+</body>
+</html>
